@@ -2,8 +2,8 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductForm, { ProductFormInput } from "../components/ProductForm";
-import axios from "../utils/AxiosInstansce";
-import { fetchProductDetail } from "./ProductDetail";
+import axios from "../utils/AxiosInstance";
+import { fetchProductDetail } from "./ProductDetail";   
 
 const editProduct = async (data: ProductFormInput, id: string | undefined) => {
   return await axios.put(`/products/${id}`, data);

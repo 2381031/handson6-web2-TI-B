@@ -23,6 +23,7 @@ const ProductForm: React.FC<ProductFormProps> = (props) => {
     setValue,
     formState: { errors }
   } = useForm<ProductFormInput>();
+  
   useEffect(() => {
     if (props.defaultInputData) {
       setValue("title", props.defaultInputData.title);

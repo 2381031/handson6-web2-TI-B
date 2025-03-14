@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { useNavigate, useParams } from "react-router-dom";
-import axios from "../utils/AxiosInstansce";
+import axios from "../utils/AxiosInstance";
 import { useEffect } from "react";
 
 interface ProductDetail {
